@@ -1,0 +1,218 @@
+.Main {
+    height: 100%;
+    padding-top: 1.5rem;    
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+
+/* Hello text */
+.info_text {    
+    margin-top: 20px;
+    font-size: 1.2rem;   
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.my_name {
+    font-weight: 400;
+    font-size: 30px;
+    opacity: 1;
+    color: rgb(60, 60, 60);
+}
+
+.Designer {
+    font-weight: 400;
+    font-size: 18px;
+    width: 700px;
+    color: rgb(100, 100, 100);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    
+}
+
+
+.section_title_icons {
+    position: relative;
+    width: 250px;
+    margin-top: 120px;
+    font-size: 18px;
+    font-weight: 500;
+    color:rgb(80, 80, 80);
+    left: 10%;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* effects the Image layout */
+
+
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,112px);
+    grid-auto-rows: 140px;
+    width: 80%;    
+    margin: auto;
+    margin-top: 40px;
+    grid-gap: 42px; 
+    text-align: center;   
+}
+
+
+
+/* effects the Image */    
+.img-wrapper {
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+    
+}
+
+.img-wrapper:hover {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10%;
+    box-shadow: 2px 2px 5px -1px rgba(0,0,0,.4);
+}
+
+.img-wrapper img {
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.img-wrapper p {
+    font-size: 15px;
+    font-weight: 400;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    color:rgb(95, 104, 102); 
+    
+}
+
+.img-wrapper button {
+    opacity: 0;
+}
+
+.img-wrapper:hover button {
+    opacity: 1;
+    bottom: 0;
+    height: 2.5rem;
+    width: 112px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 0;
+    background-color: rgba(155, 225, 238, 0.644);
+    color:rgb(47, 51, 50); 
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.img-wrapper button:hover .material-icons-outlined {
+    color: rgb(20, 20, 20);
+}
+      
+      
+
+/* effects the modal */
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease-out;
+}
+
+.modal.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-img {
+    position: absolute;
+    max-height: 70%;
+    max-width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal p {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+
+/* medium */
+@media screen and (max-width: 1024px) {
+    .category_one {   
+        column-count: 2;
+        max-width: 100%;
+        padding: 30px;    
+        }
+    
+        .info_text {
+            margin-top: 30px;
+        }
+}
+/* small */
+@media screen and (max-width: 700px) {
+    .info_text {
+        margin-top: 20px;   
+        
+    }
+
+    .my_name {
+    font-size: 22px;
+   }
+
+   .line {
+    width: 200px;
+    margin-top: 5px;
+   }
+
+   .Designer {
+    font-size: 13px;
+    margin-bottom: 70px;
+   }
+
+   .modal {
+    display: none;
+   }
+
+   .img-wrapper img:hover {
+    outline: none;
+    }
+
+   .category_one {   
+    column-count: 1;
+    max-width: 100%;
+    padding: 30px;    
+    }
+
+    h2 {
+    margin-top: 30px;
+    font-size: 25px;
+    }
+
+}

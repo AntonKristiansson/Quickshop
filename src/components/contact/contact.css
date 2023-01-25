@@ -1,0 +1,132 @@
+.contact_details {
+    text-align: center;
+}
+
+.contact_details h3 {
+    position: relative;
+    top: 200px;
+}
+
+form {
+        width: 50%;
+        margin: 30px auto; 
+        margin-bottom: 100px;
+        color: rgb(0, 0, 0);
+        font-family: sans-serif;
+        padding: 20px;  
+    }
+
+.form_title {
+    text-align: center;
+    margin-top: 200px;    
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+
+input,
+textarea {
+    width: 100%;
+    border: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid rgb(173, 173, 173);
+    border-radius: 8px; 
+    color: rgb(0, 0, 0);
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+input:focus, textarea:focus {
+    background: rgb(0, 0, 0);
+    color:rgb(24, 24, 24)
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.submit {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    border: 3px solid rgb(218, 93, 93);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 16px;           
+    border-radius: 0.4rem;
+    background: rgba(24, 24, 24, 0);
+}
+
+.submit:hover {
+    background: rgb(218, 93, 93);
+    color: rgb(24, 24, 24);
+}
+
+
+.visible {
+    display: block;
+}
+
+.email_sent {
+    color: rgb(218, 93, 93);
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: absolute;
+    
+
+    animation: flying;
+    animation-duration: 4s;   
+    animation-timing-function: ease;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+
+  @keyframes flying {
+    0% {right: 30%; opacity: 0;}
+    25% {right: 0; opacity: 1;}
+    50% {right: 0; opacity: 1;}
+    75% {right: 0; opacity: 1;}
+    100% {right: 0; opacity: 1;}
+}
+
+  @media screen and (max-width: 1024px) {
+
+    .form_title {
+        margin-top: 250px;
+    }
+
+  }
+
+  @media screen and (max-width: 700px) {
+
+    form {
+        width: 75%;
+    }
+
+    button {
+        margin-bottom: 100px;
+    }
+
+    @keyframes flying {
+        0% {opacity: 0;}
+        25% {opacity: 1;}
+        50% {opacity: 1;}
+        75% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+
+  }

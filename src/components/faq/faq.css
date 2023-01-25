@@ -1,0 +1,66 @@
+.faq_section {
+  margin-top: 8%;
+}
+
+details {
+  width: 50%;
+  margin: 20px auto;
+  box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+  border-radius: 4px;
+  overflow: hidden;
+  transform-origin: top;
+  
+}
+
+details[open] {
+  animation-name: accordion-open;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+}
+
+@keyframes accordion-open {
+  from {max-height: 56px;}
+  to {max-height: 200px;}
+}
+
+
+summary {
+  padding: 15px;
+  display: block;
+  background: #ffffff;
+  position: relative;
+  cursor: pointer;
+  color:rgb(80, 80, 80);
+  font-weight: 500;
+}
+
+summary:before {
+  content: '';
+  background-image: url("../../../public/assets/arrow_dropdown_navigation.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 1rem;
+  right: 1rem;
+  transition: .25s transform ease;
+}
+
+details[open] > summary:before {
+  transform: rotate(180deg);
+}
+
+details > p {
+  padding: 15px;
+  margin-bottom: 0;
+  transition: 0.3s;
+  background: #ffffff;
+  margin-top: 0;
+  padding-top: 1rem;
+  color:rgb(95, 104, 102);
+}
+
+
+

@@ -1,0 +1,45 @@
+.comingsoon_component {
+    margin-top: 100px;
+}
+
+.comingsoon_info {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 18px;
+    width: 700px;    
+    color: rgb(100, 100, 100);
+    margin-top: 5%;
+}
+
+.p_container {
+    margin-top: 10px;
+}
+
+.icon_comingsoon {
+    position: relative;
+    left: 10%;
+    color:rgb(80, 80, 80);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.icon_comingsoon_description {
+    position: relative;
+    left: 10%;
+    color:rgb(95, 104, 102); 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.releasedate_title {
+    position: relative;
+    width: 250px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color:rgb(80, 80, 80);
+    left: 10%;
+}
