@@ -31,7 +31,7 @@ const App = () => {
         
         <Burger_menu />
 
-        <BrowserRouter>          
+        <BrowserRouter basename={process.env.PUBLIC_URL}>          
           <Routes>
             <Route path='/' element={<><Navbar/><Search/><Main/></>}/>
             <Route path='/contact' element={<><Navbar/><Contact/></>}/>

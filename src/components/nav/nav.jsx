@@ -6,17 +6,6 @@ import { BrowserRouter, NavLink, Link } from 'react-router-dom';
 
 export const Navbar = () => {
   
-  {/* const [navbar,setnavbar] = useState(false)
-  const changeBackground = () => {
-    if(window.scrollY >= 80) {
-      setnavbar(true)
-    } else {
-      setnavbar(false)
-    }
-  };
-  window.addEventListener("scroll", changeBackground)
-*/}
-
   const move_to_top = () => {
     window.scrollTo(0, 0);
   }
@@ -38,8 +27,3 @@ export const Navbar = () => {
     
   )
 }
-
-// <a href='#Landscape' onClick={() => setActiveNav("#Landscape")} className={activeNav === "#Landscape" ? "active" : ""}>Landscape</a>
-//<a href='#Texture' onClick={() => setActiveNav("#Texture")} className={activeNav === "#Texture" ? "active" : ""}>Texture</a>
-//<a href='#Space' activeClass="active" smooth spy to="Space" onClick={() => setActiveNav("#Space")} className={activeNav === "#Space" ? "active" : ""}>Space</a>
-//<a href='#Animals' onClick={() => setActiveNav("#Animals")} className={activeNav === "#Animals" ? "active" : ""}>Animals</a>
