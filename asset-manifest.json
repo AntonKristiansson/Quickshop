@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Quickshop/static/css/main.97e1c031.css",
-    "main.js": "/Quickshop/static/js/main.5fafa44f.js",
+    "main.js": "/Quickshop/static/js/main.8d59b56e.js",
     "index.html": "/Quickshop/index.html",
     "static/media/arrow_dropdown_navigation.svg": "/Quickshop/static/media/arrow_dropdown_navigation.6895eae9ceac4a3fdce8.svg",
     "main.97e1c031.css.map": "/Quickshop/static/css/main.97e1c031.css.map",
-    "main.5fafa44f.js.map": "/Quickshop/static/js/main.5fafa44f.js.map"
+    "main.8d59b56e.js.map": "/Quickshop/static/js/main.8d59b56e.js.map"
   },
   "entrypoints": [
     "static/css/main.97e1c031.css",
-    "static/js/main.5fafa44f.js"
+    "static/js/main.8d59b56e.js"
   ]
 }
