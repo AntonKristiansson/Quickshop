@@ -98,23 +98,6 @@ export const Search = () => {
   const show_dropdown = () => {  
     setshowdropdown(!showdropdown)    
 }
-/*
-React.useEffect(() => {
-const stickyElem = document.querySelector(".search_container")
-const currStickyPos = stickyElem.getBoundingClientRect().top + window.pageYOffset;
-kolla https://github.com/murtazaSha/reactScrollTopuse/blob/main/src/App.js
-och se om du kan använda hans "change class" men mina if else och min uträkning
-av y-position som beräknas ovan 
-window.onscroll = function() {
-if(window.pageYOffset > currStickyPos) {
-  stickyElem.style.position = "fixed";
-  stickyElem.style.top = "0px";
-} else {
-  stickyElem.style.position = "relative";
-  stickyElem.style.top = "initial";
-}
-    }
-  })*/
 
   const filterMenu = useRef()
 
@@ -139,10 +122,7 @@ if(window.pageYOffset > currStickyPos) {
           <span class="material-icons-outlined">arrow_drop_down</span>
         </button>
         
-        { /*kolla om man kan köra en nth-child på btn classerna instället för
-        ge dem olika classer för första å sista. Kolla även material color för
-        effekten på btn å allt annat.. blå*/
-        
+        {        
         showdropdown?<div  className="myBtnContainer">
           <button class="btn_first" onClick={show_all}>Show All</button>
           <button class="btn" onClick={show_action}>Action</button>

@@ -25,13 +25,7 @@ export const Main = () => {
 
   const test = [...(showaction ? iconDataAction : []), ...(shownavigation ? iconDataNavigation : []), ...(showsocial ? iconDataSocial : []), ...(showcontent ? iconDataContent : []), ...(showimage ? iconDataImage : []), ...(showcommunication ? iconDataCommunication : [])]
 
-  {/* 
-      - Change like google, show no categories when you have searched, only when search
-        is empty? // måste kunna filtrera på categori även när man har sökt på något
-      - create a search function
-      - clean up code / remove all extra documents
-
-       */}    
+  
 
        
   return (  
@@ -198,34 +192,7 @@ export const Main = () => {
         </div>
         </div>:null
         }
-      
-         
-
-      
-
-
-
-       
-      
-
-
-
-{/* Add new picture by adding the div "img-wrapper" and all of its content inside*/}
-
-{/* kan ändra i download till vilket format jag vill, jpg, png .. etc */}
-      
-      
              
-    
-    
-      
-      <div class="modal">
-        <img class="modal-img" src="#" alt=""/>
-        <p class="caption"></p>
-      </div>
-
-
-
 
     </div>
 

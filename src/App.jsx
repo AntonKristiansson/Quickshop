@@ -2,8 +2,6 @@ import React from 'react'
 import { Main } from './components/main/main';
 import { Navbar } from './components/nav/nav';
 import { Search } from './components/search/search';
-import { Burger_menu } from './components/nav/burger_menu';
-import { Contact } from "./components/contact/contact"
 import { Comingsoon } from "./components/comingsoon/comingsoon";
 import { Faq } from "./components/faq/faq"
 import { useState } from 'react';
@@ -29,14 +27,12 @@ const App = () => {
     <>
       <UserContext.Provider value={{ showaction, setshowaction, shownavigation, setshownavigation, showsocial, setshowsocial, showcontent, setshowcontent, showimage, setshowimage, showcommunication, setshowcommunication, showdropdown, setshowdropdown, input, setinput }}>
         
-        <Burger_menu />
-
-        <BrowserRouter basename={process.env.PUBLIC_URL}>          
+        
+        <BrowserRouter basename='/Quickshop/'>          
           <Routes>
-            <Route path='/' element={<><Navbar/><Search/><Main/></>}/>
-            <Route path='/contact' element={<><Navbar/><Contact/></>}/>
-            <Route path='/comingsoon' element={<><Navbar/><Comingsoon/></>}/>
-            <Route path='/faq' element={<><Navbar/><Faq/></>}/>
+            <Route exact path="/" element={<><Navbar/><Search/><Main/></>}/>
+            <Route path="/comingsoon" element={<><Navbar/><Comingsoon/></>}/>
+            <Route path="/faq" element={<><Navbar/><Faq/></>}/>
           </Routes>
         </BrowserRouter>
       </UserContext.Provider>      
